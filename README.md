@@ -1,4 +1,4 @@
-# Kephri v0.0.1
+# Khepri v0.0.1
 
 ## intro
 
