@@ -1,6 +1,6 @@
 # Khepri v0.0.1
 
-## intro
+## Intro
 
 To install this package, you need to install first python-pip package :
 
@@ -23,11 +23,11 @@ When done, you can use Khepri using this example below :
 #!/usr/bin/python
 from khepri import *
 
-# Khepri URL
-khepri_url = 'http://test-khepridevelba-1t8aalo9fz0t1-723475646.eu-west-1.elb.amazonaws.com'
+# Khepri URL (sandbox environment)
+khepri_url = 'http://sb.khepri.tech'
 
 # Khepri parameters needed
-api_key = '213e71dd6e9f354de2c42eee366d4263'
+api_key = 'MY_APi_KEY' # Replace with your real API key 
 instance_id = '1'
 
 # Create instance
