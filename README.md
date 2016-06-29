@@ -1,4 +1,4 @@
-# Khepri v0.0.1
+# Khepri
 
 ## Intro
 
@@ -21,23 +21,25 @@ When done, you can use Khepri using this example below :
 
 ```python
 #!/usr/bin/python
+
+# Install Khepri using pip: $ sudo pip install khepri
 from khepri import *
 
 # Khepri URL (sandbox environment)
 khepri_url = 'http://sb.khepri.tech'
 
-# Khepri parameters needed
-api_key = 'MY_APi_KEY' # Replace with your real API key 
+# Initialize the client with your API-Key. You can find it on your Khepri account.
+api_key = 'MY_API_KEY' 
 instance_id = '1'
 
-# Create instance
-instance_khepri = Khepri(khepri_url, api_key, instance_id)
+# Create Khepri object
+khepri = Khepri(khepri_url, api_key, instance_id)
 
 # Method to ask Khepri
-result = instance_khepri.ask()
+result = khepri.ask()
 print 'Status : ' + result['status'] + '; Solution : ' + result['solution']
 
 # Method to call on success
-result = instance_khepri.success(result['solution'])
+result = khepri.success(result['solution'])
 print 'Status : ' + result['status']
 ```
