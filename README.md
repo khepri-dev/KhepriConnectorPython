@@ -1,22 +1,25 @@
--- ------------- --
--- Kephri v0.0.1 --
--- ------------- --
+# Kephri v0.0.1
+
+## intro
 
 To install this package, you need to install first python-pip package :
 
+```
 $ sudo apt-get install python-pip
+```
 
-Then, you can install Khepri packa  ge from PyPI using this command line :
+Then, you can install Khepri package from PyPI using this command line :
 
+```
 $ sudo pip install khepri
+```
 
 When done, you can use Khepri using this example below :
 
 
--- ------- --
--- Example --
--- ------- --
+## Example
 
+```python
 #!/usr/bin/python
 from khepri import *
 
@@ -37,3 +40,4 @@ print 'Status : ' + result['status'] + '; Solution : ' + result['solution']
 # Method to call on success
 result = instance_khepri.success(result['solution'])
 print 'Status : ' + result['status']
+```
